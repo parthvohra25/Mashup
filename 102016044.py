@@ -78,9 +78,9 @@ def download_files(x,n,y,output_name,email):
 
     print("Mashup has been created successfully...")
     server = "smtp-mail.outlook.com"
-    sender = "vasuvohra2504@outlook.com"
+    sender = "your-mail-id"
     recipient = email
-    password = "vasu@123"
+    password = "mail-id-password"
     msg = MIMEMultipart()       
     msg.attach(MIMEText("This is the message body of the email"))
     part = MIMEBase('application', "octet-stream")
