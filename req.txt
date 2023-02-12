@@ -7,3 +7,4 @@ MarkupSafe==2.1.2
 pydub==0.25.1
 pytube==12.1.2
 Werkzeug>=2..2
+flask==2.2.2
