@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Information Input Form</title>
+  <style>
+    form {
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 50px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    input[type="text"], input[type="email"], input[type="number"] {
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+      width: 70%;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <form action="/start" method="POST">
+    <h2>Please fill in the following information:</h2>
+    <label for="singer">Singer Name:</label><br>
+    <input type="text" id="singer" name="singerName" required><br><br>
+
+    <label for="email">Number of Videos:</label><br>
+    <input type="number" id="vid" name="vidName" required><br><br>
+
+    <label for="phone">Duration of Each Video:</label><br>
+    <input type="number" id="dur" name="durName" required><br><br>
+
+    <label for="email">Email-ID:</label><br>
+    <input type="email" id="email" name="emailName" required><br><br>
+
+    <label for="fn">FileName:</label><br>
+    <input type="text" id="fn" name="fnName" required><br><br>
+
+    <input type="submit" value="Submit">
+  </form> 
+</body>
+</html>
