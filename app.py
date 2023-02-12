@@ -1,31 +1,18 @@
 #IMPORTING ESSENTIAL LIBRARIES
-from tabulate import tabulate
 from os import path
-import pandas as pd
-import math as m
-import sys
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-import smtplib, ssl
+import smtplib
 from email import encoders
 from flask import Flask,render_template,request
-# from flask_mail import Mail, Message
-from flask_wtf import FlaskForm
-from wtforms import FileField, SubmitField
-from werkzeug.utils import secure_filename
 import os
-import csv
-import pandas as pd
 from email.message import EmailMessage
-# from werkzeug import security
-import ssl
 import smtplib
 from pytube import YouTube
 from pydub import AudioSegment
 import urllib.request
 import re
-import os
 import sys
 
 
