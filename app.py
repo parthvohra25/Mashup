@@ -16,32 +16,32 @@ import re
 import sys
 
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+# @app.route('/')
+# def index():
+#     return render_template('index.html')
 
-@app.route('/start',methods=['POST'])
-def hello_world():
-    # if len(sys.argv) == 5:
-    # data = request.form.get("singerName")
-    x =  request.form.get("singerName")
-    # print(x)
-    x = x.replace(' ','') + "songs"
-    try:
-        n = int(request.form['vidName'])
-        y = int(request.form['durName'])
-    except:
-        sys.exit("Wrong Parameters entered")
-    email=request.form['emailName']
-    output_name = str(request.form['fnName'])
-    print(x,n,y,email,output_name)
+# @app.route('/start',methods=['POST'])
+# def hello_world():
+#     # if len(sys.argv) == 5:
+#     # data = request.form.get("singerName")
+#     x =  request.form.get("singerName")
+#     # print(x)
+#     x = x.replace(' ','') + "songs"
+#     try:
+#         n = int(request.form['vidName'])
+#         y = int(request.form['durName'])
+#     except:
+#         sys.exit("Wrong Parameters entered")
+#     email=request.form['emailName']
+#     output_name = str(request.form['fnName'])
+#     print(x,n,y,email,output_name)
 
     
-    if os.path.exists(output_name):
-        os.remove(output_name)
-    return download_files(x,n,y,output_name,email)
+#     if os.path.exists(output_name):
+#         os.remove(output_name)
+#     return download_files(x,n,y,output_name,email)
     
 #NEW>
 
