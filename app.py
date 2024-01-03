@@ -84,24 +84,24 @@ def download_files(x,n,y,output_name,email):
     fin_sound.export(output_name, format="mp3")
 
     print("Mashup has been created successfully...")
-    server = "smtp-mail.outlook.com"
-    sender = "your-mail-id"
-    recipient = email
-    password = "mail-id-password"
-    msg = MIMEMultipart()       
-    msg.attach(MIMEText("This is the message body of the email"))
-    part = MIMEBase('application', "octet-stream")
-    part.set_payload(open(output_name, "rb").read())
-    encoders.encode_base64(part)
-    part.add_header('Content-Disposition', 'attachment', filename=output_name)
-    msg.attach(part)
+    # server = "smtp-mail.outlook.com"
+    # sender = "your-mail-id"
+    # recipient = email
+    # password = "mail-id-password"
+    # msg = MIMEMultipart()       
+    # msg.attach(MIMEText("This is the message body of the email"))
+    # part = MIMEBase('application', "octet-stream")
+    # part.set_payload(open(output_name, "rb").read())
+    # encoders.encode_base64(part)
+    # part.add_header('Content-Disposition', 'attachment', filename=output_name)
+    # msg.attach(part)
 
-    smtp = smtplib.SMTP('smtp-mail.outlook.com', 587)
-    smtp.starttls()
-    smtp.login(sender, password)
-    smtp.sendmail(sender, recipient, msg.as_string())
-    print("Email Sent AHHH YEAH")
-    smtp.quit()
+    # smtp = smtplib.SMTP('smtp-mail.outlook.com', 587)
+    # smtp.starttls()
+    # smtp.login(sender, password)
+    # smtp.sendmail(sender, recipient, msg.as_string())
+    # print("Email Sent AHHH YEAH")
+    # smtp.quit()
     return "Done"
 
 
