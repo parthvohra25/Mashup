@@ -1,19 +1,15 @@
 #IMPORTING ESSENTIAL LIBRARIES
-from os import path
-from email.mime.base import MIMEBase
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-import smtplib
-from email import encoders
-from flask import Flask,render_template,request
-import os
-from email.message import EmailMessage
-import smtplib
-from pytube import YouTube
-from pydub import AudioSegment
-import urllib.request
-import re
-import sys
+# from email.mime.base import MIMEBase
+# from email.mime.multipart import MIMEMultipart
+# from email.mime.text import MIMEText
+# import smtplib
+# from email import encoders
+# from flask import Flask,render_template,request
+# import smtplib
+# from email.message import EmailMessage
+
+
+
 
 
 # app = Flask(__name__)
@@ -42,6 +38,17 @@ import sys
 #     if os.path.exists(output_name):
 #         os.remove(output_name)
 #     return download_files(x,n,y,output_name,email)
+
+
+
+
+import os
+from os import path
+from pytube import YouTube
+from pydub import AudioSegment
+import urllib.request
+import re
+import sys
     
 #NEW>
 
